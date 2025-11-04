@@ -23,20 +23,25 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
-  <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <a class="nav-link active" aria-current="page" href="#aboutme">About me</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#services">Services</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#contact">Contact</a>
 </li>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown
+    Proyectos
   </a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#aboutme">About me</a></li>
-    <li><a class="dropdown-item" href="#services">Services</a></li>
+    <li><a class="dropdown-item" href="#ecommerce">E-commerce</a></li>    
+    <li><a class="dropdown-item" href="#Entreprise">Enterprise</a></li>
+    <li><a class="dropdown-item" href="#academic">Academic</a></li>
+    
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+    <li><a class="dropdown-item" href="#contact">App of accecibility</a></li>
   </ul>
 </li>
 <li class="nav-item">
@@ -54,7 +59,7 @@
   <div class="container mt-5">
     <div class="jumbotron text-center">
       <h1 class="display-4">Welcome to My Portfolio</h1>
-      <p class="lead">Showcasing my projects and skills</p>
+      <p class="lead">I'm a web developer with experience in HTML, CSS, JavaScript, and React.</p>
       <hr class="my-4">
       <p>Explore my work and get in touch!</p>
       <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Me</a>
@@ -114,11 +119,56 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
   </section>
+  <footer></footer>
 
   
   
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+
+      const btnText = document.getElementById('btn-enviar');
+      const spinner = document.getElementById('btn-spinner');
+      const submitBtn = document.getElementById('submit-btn');
+      const successAlert = document.getElementById('alert-success');
+      const errorAlert = document.getElementById('alert-error');
+
+
+      // Estado de carga
+      btnText.textContent = 'Enviando...';
+      spinner.classList.remove('d-none');
+      submitBtn.disabled = true;
+      successAlert.classList.add('d-none');
+      errorAlert.classList.add('d-none');
+
+
+      // Enviar a Formspree
+      fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { 'Accept': 'application/json' }
+      })
+          .then(response => {
+              if (response.ok) {
+                  successAlert.classList.remove('d-none');
+                  this.reset();
+              } else {
+                  errorAlert.classList.remove('d-none');
+              }
+          })
+          .catch(() => errorAlert.classList.remove('d-none'))
+          .finally(() => {
+              btnText.textContent = 'Enviar';
+              spinner.classList.add('d-none');
+              submitBtn.disabled = false;
+          });
+  });
+</script>
+</body>
 </html>
