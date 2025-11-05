@@ -1,174 +1,370 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <meta keywords="portfolio, projects, web development, contact, frontend, ecommerce">
-  <meta name="description" content="Welcome to my portfolio website. Explore my projects and skills in web development.">
-    <title>My Portfolio</title>
+    <meta name="keywords" content="portfolio, projects, web development, contact, frontend, ecommerce, react, javascript">
+    <meta name="description" content="Portfolio profesional de Marisa Viotti - Desarrolladora Web especializada en Frontend, React y JavaScript. Explora mis proyectos y contacta conmigo.">
+    <meta name="author" content="Marisa Viotti">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Marisa Viotti - Portfolio Profesional">
+    <meta property="og:description" content="Desarrolladora Web especializada en Frontend, React y JavaScript">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./marisa.jpg">
+    
+    <title>Marisa Viotti - Portfolio Profesional</title>
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
   </head>
-  <main>
-
-  </main>
-  <body>    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" fixed="top">
-<div class="container-fluid">
-<a class="navbar-brand" href="#">Porfolio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-<li class="nav-item">
-  <a class="nav-link active" aria-current="page" href="#aboutme">About me</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#services">Services</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#contact">Contact</a>
-</li>
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Proyectos
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#ecommerce">E-commerce</a></li>    
-    <li><a class="dropdown-item" href="#Entreprise">Enterprise</a></li>
-    <li><a class="dropdown-item" href="#academic">Academic</a></li>
-    
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#contact">App of accecibility</a></li>
-  </ul>
-</li>
-<li class="nav-item">
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-</li>
-</ul>
-<form class="d-flex" role="search">
-<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-<button class="btn btn-outline-success" type="submit">Search</button>
-</form>
-</div>
-</div>
-</nav>
-<main>
-  <div class="container mt-5">
-    <div class="jumbotron text-center">
-      <h1 class="display-4">Welcome to My Portfolio</h1>
-      <p class="lead">I'm a web developer with experience in HTML, CSS, JavaScript, and React.</p>
-      <hr class="my-4">
-      <p>Explore my work and get in touch!</p>
-      <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Me</a>
-    </div>
-  </div>
-</main>
-<section class="container" id="aboutme">
-  <h2 class="text-center" p-3>About me</h2></h2>
-  <div class="row">
-    <div class="col-md-5">     
-      <img src="marisa.jpg" alt="Profile Picture" class="img-fluid mx-auto d-block">
-      
-    </div>
-    <div class="col-md-7 py-3">
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a href="https://www.linkedin.com/in/marisa-viotti-74601036a/" target="_blank" rel="noopener" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </div>
- <section class="container" id="services">
-  <h2 class="text-center" p-3>Services</h2>
-  <div class="row">
-      
-    <div class="col-md-4">
-      <div class="card service-card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Web Development</h5>
-          <p class="card-text">Html Css Js</p>
-  </div>
+  <body>
+    <!-- Navegación Profesional -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i class="fas fa-code me-2"></i>Marisa Viotti
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  <div class="card">
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">REACT</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div> 
-</section>
-<section class="container" id="contact" my-5 p-4 bg-light rouded>  
-  <h2 class="text-center" p-3>Contact</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Your Name">
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" placeholder="
-      Your Email">
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </section>
-  <footer></footer>
+    </nav>
 
-  
-  
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Marisa Viotti</h1>
+          <p class="hero-subtitle">Desarrolladora Web Frontend</p>
+          <p class="hero-description">Especializada en HTML, CSS, JavaScript y React. Creando experiencias digitales modernas y profesionales.</p>
+          <a href="#contact" class="btn btn-light btn-hero">
+            <i class="fas fa-envelope me-2"></i>Contáctame
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Sobre Mí -->
+    <section id="aboutme" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img src="marisa.jpg" alt="Marisa Viotti - Desarrolladora Web" class="img-fluid profile-img">
+          </div>
+          <div class="col-lg-7">
+            <div class="about-text">
+              <p class="lead">¡Hola! Soy Marisa Viotti, una desarrolladora web apasionada por crear experiencias digitales excepcionales.</p>
+              <p>Con experiencia en tecnologías modernas como HTML5, CSS3, JavaScript y React, me especializo en el desarrollo frontend y la creación de interfaces de usuario intuitivas y responsivas.</p>
+              <p>Mi objetivo es transformar ideas creativas en soluciones web funcionales y atractivas que generen un impacto positivo en los usuarios.</p>
+              
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/marisa-viotti-74601036a/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:marisa@example.com" class="social-link" title="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Servicios -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Mis Servicios</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h5 class="service-title">Desarrollo Web Frontend</h5>
+                <p class="card-text">Creación de sitios web modernos y responsivos utilizando HTML5, CSS3 y JavaScript.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h5 class="service-title">Aplicaciones React</h5>
+                <p class="card-text">Desarrollo de aplicaciones web interactivas y dinámicas con React.js y componentes reutilizables.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h5 class="service-title">Diseño Responsivo</h5>
+                <p class="card-text">Optimización para todos los dispositivos garantizando una experiencia de usuario excepcional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"></script>
+    <!-- Sección Portfolio -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Mi Portfolio</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h5 class="service-title">Proyecto E-commerce</h5>
+                <p class="card-text">Tienda online completa desarrollada con React, incluyendo carrito de compras y sistema de pagos.</p>
+                <a href="#" class="btn btn-outline-primary">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h5 class="service-title">Sitio Corporativo</h5>
+                <p class="card-text">Página web empresarial moderna con diseño profesional y optimización SEO.</p>
+                <a href="#" class="btn btn-outline-primary">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Contacto con Formspree -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-form">
+              <!-- Alertas de estado -->
+              <div id="alert-success" class="alert custom-alert alert-success d-none" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                ¡Mensaje enviado exitosamente! Te responderé pronto.
+              </div>
+              <div id="alert-error" class="alert custom-alert alert-danger d-none" role="alert">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.
+              </div>
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
+              <!-- Formulario conectado a Formspree -->
+              <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">
+                      <i class="fas fa-user me-2"></i>Nombre Completo
+                    </label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Tu nombre completo">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">
+                      <i class="fas fa-envelope me-2"></i>Email
+                    </label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="tu@email.com">
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="subject" class="form-label">
+                    <i class="fas fa-tag me-2"></i>Asunto
+                  </label>
+                  <input type="text" class="form-control" id="subject" name="subject" required placeholder="Asunto del mensaje">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="message" class="form-label">
+                    <i class="fas fa-comment me-2"></i>Mensaje
+                  </label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                
+                <!-- Campos ocultos para Formspree -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio - Marisa Viotti">
+                <input type="hidden" name="_next" value="https://marisaviotti.com/thank-you.html">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="text-center">
+                  <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                    <span id="btn-text">
+                      <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                    </span>
+                    <span id="btn-spinner" class="spinner-border spinner-border-sm d-none ms-2" role="status" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2025 Marisa Viotti. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/marisa-viotti-74601036a/" target="_blank" rel="noopener" class="social-link me-2" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-link me-2" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:marisa@example.com" class="social-link" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      const btnText = document.getElementById('btn-enviar');
-      const spinner = document.getElementById('btn-spinner');
-      const submitBtn = document.getElementById('submit-btn');
-      const successAlert = document.getElementById('alert-success');
-      const errorAlert = document.getElementById('alert-error');
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- Script personalizado para Formspree -->
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+          e.preventDefault();
 
-      // Estado de carga
-      btnText.textContent = 'Enviando...';
-      spinner.classList.remove('d-none');
-      submitBtn.disabled = true;
-      successAlert.classList.add('d-none');
-      errorAlert.classList.add('d-none');
+          const btnText = document.getElementById('btn-text');
+          const spinner = document.getElementById('btn-spinner');
+          const submitBtn = document.getElementById('submit-btn');
+          const successAlert = document.getElementById('alert-success');
+          const errorAlert = document.getElementById('alert-error');
 
+          // Estado de carga
+          btnText.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+          spinner.classList.remove('d-none');
+          submitBtn.disabled = true;
+          successAlert.classList.add('d-none');
+          errorAlert.classList.add('d-none');
 
-      // Enviar a Formspree
-      fetch(this.action, {
-          method: 'POST',
-          body: new FormData(this),
-          headers: { 'Accept': 'application/json' }
-      })
+          // Enviar a Formspree
+          fetch(this.action, {
+              method: 'POST',
+              body: new FormData(this),
+              headers: { 'Accept': 'application/json' }
+          })
           .then(response => {
               if (response.ok) {
                   successAlert.classList.remove('d-none');
                   this.reset();
+                  // Scroll to success message
+                  successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
               } else {
-                  errorAlert.classList.remove('d-none');
+                  return response.json().then(data => {
+                      if (data.errors) {
+                          throw new Error(data.errors.map(error => error.message).join(', '));
+                      } else {
+                          throw new Error('Error al enviar el formulario');
+                      }
+                  });
               }
           })
-          .catch(() => errorAlert.classList.remove('d-none'))
+          .catch(error => {
+              console.error('Error:', error);
+              errorAlert.classList.remove('d-none');
+              errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          })
           .finally(() => {
-              btnText.textContent = 'Enviar';
+              btnText.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Enviar Mensaje';
               spinner.classList.add('d-none');
               submitBtn.disabled = false;
           });
-  });
-</script>
-</body>
+      });
+
+      // Smooth scrolling para navegación
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute('href'));
+              if (target) {
+                  target.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                  });
+              }
+          });
+      });
+
+      // Navbar transparente al hacer scroll
+      window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+
+      // Animaciones al hacer scroll
+      const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fade-in-up');
+              }
+          });
+      }, observerOptions);
+
+      // Observar elementos para animaciones
+      document.querySelectorAll('.service-card, .section-title, .hero-content').forEach(el => {
+          observer.observe(el);
+      });
+    </script>
+  </body>
 </html>
