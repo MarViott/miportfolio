@@ -1,0 +1,32 @@
+# GitHub Pages Configuration
+title: "Marisa Viotti - Portfolio Profesional"
+description: "Desarrolladora Web Frontend especializada en React y JavaScript"
+baseurl: "/miportfolio"
+url: "https://marviott.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: "Marisa Viotti"
+lang: "es"
+
+# Social media
+social:
+  name: "Marisa Viotti"
+  links:
+    - "https://www.linkedin.com/in/marisa-viotti-74601036a/"
+    - "https://github.com/MarViott"
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
+  - .github/
