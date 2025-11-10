@@ -36,42 +36,6 @@ miportfolio/
 └── README.md           # Documentación del proyecto
 ```
 
-## 🛠️ Instalación Local
-
-1. Clona el repositorio:
-```bash
-git clone https://github.com/MarViott/miportfolio.git
-```
-
-2. Navega al directorio:
-```bash
-cd miportfolio
-```
-
-3. Abre con un servidor local:
-```bash
-# Con Python
-python -m http.server 8080
-
-# Con Node.js (si tienes live-server instalado)
-live-server
-
-# O simplemente abre index.html en tu navegador
-```
-
-4. Visita `http://localhost:8080` en tu navegador
-
-## 📧 Configuración del Formulario de Contacto
-
-El formulario utiliza [Formspree](https://formspree.io/) para el manejo de mensajes:
-
-1. Regístrate en Formspree.io
-2. Crea un nuevo formulario
-3. Reemplaza `YOUR_FORM_ID` en `index.html` con tu ID real:
-```html
-<form id="contact-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
-```
-
 ## 🎯 Secciones del Portfolio
 
 - **Hero** - Presentación inicial con call-to-action
@@ -100,7 +64,7 @@ Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más det
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/marisa-viotti-74601036a/)
 - 🐙 [GitHub](https://github.com/MarViott)
-- 📧 Email: marisa@example.com
+- 📧 Email: <marisaviotti@gmail.com>
 - 🌐 Portfolio: [https://marviott.github.io/miportfolio/](https://marviott.github.io/miportfolio/)
 
 ---
