@@ -13,6 +13,106 @@
   --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+/* Variables para modo oscuro */
+[data-theme="dark"] {
+  --primary-color: #ecf0f1;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #ecf0f1;
+  --text-light: #bdc3c7;
+  --bg-light: #1a1a2e;
+  --white: #16213e;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  --gradient: linear-gradient(135deg, #434343 0%, #000000 100%);
+}
+
+/* Tema oscuro para el body */
+[data-theme="dark"] body {
+  background-color: #0f3460;
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(26, 26, 46, 0.98) !important;
+}
+
+[data-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .contact-form {
+  background: var(--white);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] footer {
+  background: var(--bg-light);
+}
+
+/* Transición suave al cambiar de tema */
+body,
+.navbar,
+.hero-section,
+.service-card,
+.contact-form,
+footer,
+.section-title,
+.about-text,
+.form-control {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mejoras de contraste en modo oscuro */
+[data-theme="dark"] .section-title {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control {
+  background: #16213e;
+  color: var(--text-color);
+  border-color: #2c3e50;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: #7f8c8d;
+}
+
+[data-theme="dark"] .form-control:focus {
+  background: #1a1a2e;
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .form-label {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .nav-link {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-primary {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+[data-theme="dark"] #aboutme {
+  background: #16213e;
+}
+
+[data-theme="dark"] #services {
+  background: #0f3460;
+}
+
+[data-theme="dark"] #portfolio {
+  background: #16213e;
+}
+
+[data-theme="dark"] #contact {
+  background: #0f3460;
+}
+
 /* Fuentes profesionales */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -57,6 +157,44 @@ body {
 
 .nav-link:hover {
   color: var(--secondary-color) !important;
+}
+
+/* Botón de modo oscuro */
+.btn-dark-mode {
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-dark-mode:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: rotate(20deg);
+}
+
+.btn-dark-mode:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .btn-dark-mode {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+
+[data-theme="dark"] .btn-dark-mode:hover {
+  background: #f39c12;
+  color: #1a1a2e;
 }
 
 /* Hero Section */
