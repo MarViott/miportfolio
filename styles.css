@@ -30,8 +30,8 @@ body {
 /* Navegación profesional */
 .navbar {
   background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   padding: 1rem 0;
@@ -145,17 +145,48 @@ section {
 
 /* About Section */
 #aboutme {
-  background: var(--bg-light);
+  background: var(--bg-light);  
+}
+
+#aboutme .row {
+  align-items: center;
 }
 
 .profile-img {
-  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
   box-shadow: var(--shadow);
+  display: block;
+  margin: 0 auto 2rem;
+  
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
 }
 
 .profile-img:hover {
   transform: scale(1.02);
+}
+
+/* Alineación vertical de imagen y texto en About */
+#aboutme .col-lg-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutme .col-lg-7 {
+  display: flex;
+  align-items: center;
 }
 
 .about-text {
@@ -164,9 +195,6 @@ section {
   color: var(--text-light);
 }
 
-.social-links {
-  margin-top: 2rem;
-}
 
 .social-link {
   display: inline-block;
