@@ -37,7 +37,9 @@
 }
 
 [data-theme="dark"] .hero-section {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-size: 200% 200%;
+  animation: bg-pan-left 15s ease-in-out infinite;
 }
 
 [data-theme="dark"] .service-card,
@@ -137,10 +139,7 @@ body {
   padding: 1rem 0;
 }
 
-.navbar.scrolled {
-  background: rgba(255, 255, 255, 0.98) !important;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
+ 
 
 .navbar-brand {
   font-weight: 700;
@@ -199,12 +198,39 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% 200%;
   color: white;
   padding: 120px 0 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  animation: bg-pan-left 15s ease-in-out infinite;
+}
+
+/* Keyframes para animación de paneo del fondo */
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .hero-section::before {
